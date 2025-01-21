@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(10, 10, 44);
+    color: white;
+    text-align: center;
+    padding: 0%;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px
+}
+.card{
+    width: 200px;
+    height: 200px;
+    flex:1;
+    text-align: center;
+    padding: 15px;
+    background-color:rgb(96, 96, 146);
+    border: 2px;
+    transition: filter 0.3s ease;
+}
+.card:hover{
+    filter: drop-shadow(30px 30px 20px rgba(36, 36, 36, 0.5));
+    background-color: rgb(15, 7, 85);
+    color:aliceblue
+}
+@media (max-width: 768px){
+    .main-content {
+    flex-direction: column; 
+    }
+}
