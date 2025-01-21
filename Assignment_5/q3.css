@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+  } 
+  header{
+    text-align: center;
+  } 
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .gallery:hover .overlay {
+    opacity: 1;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    width: 80%;
+  }
+  
+  .gallery {
+    position:relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    height:200px
+  }
+ .gallery:hover{
+    transform: scale(1.12);
+ }
