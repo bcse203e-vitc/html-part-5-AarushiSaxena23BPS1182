@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="qs10.css">
+  <title>Loading Screen</title>
+</head>
+<body>
+  <div class="loading-screen">
+    <div class="spinner"></div>
+    <p>Loading...</p>
+  </div>
+  <div class="main-content">
+    <h1>Welcome to the Main Content</h1>
+    <p>This content is displayed after the loading screen.</p>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.querySelector('.loading-screen').style.display = 'none';
+      document.querySelector('.main-content').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
 
