@@ -1,1 +1,91 @@
-
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .pricing-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .plan {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .plan:hover {
+    transform: scale(1.05);
+  }
+  
+  .plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .plan .price {
+    font-size: 32px;
+    color: #4caf50;
+    margin: 10px 0;
+  }
+  
+  .plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .plan ul li {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .plan button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .plan button:hover {
+    background-color: #45a049;
+  }
+  
+  .plan.popular {
+    background: #4caf50;
+    color: #fff;
+  }
+  
+  .plan.popular .price {
+    color: #fff;
+  }
+  
+  .plan.popular ul li {
+    color: #e0e0e0;
+  }
+  
+  .plan.popular button {
+    background-color: #fff;
+    color: #4caf50;
+  }
+  
+  .plan.popular button:hover {
+    background-color: #e0e0e0;
+  }
+  
