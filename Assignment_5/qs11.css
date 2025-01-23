@@ -1,1 +1,25 @@
-
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    padding: 10%;
+    margin: 5%;
+    background-color: #4caf50;
+    border: 5px solid #333;
+    transition: border 0.3s, border-color 0.3s;
+  }
+  
+  .box:hover {
+    border-width: 10px;
+    border-color: #ff5722;
+  }
+  
